@@ -20,7 +20,7 @@ def main():
         print("3- Insert a new city")
         print("4- Exit")
         choice = input("\033[1;36mEnter your choice: \033[0m")
-
+        
         if choice == '1':
             # Agha Reza to inja benvis
             pass

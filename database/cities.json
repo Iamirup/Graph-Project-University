@@ -69,41 +69,6 @@
             -3
         ]
     },
-    "City11": {
-        "population": 161571,
-        "coordinates": [
-            36,
-            -46
-        ]
-    },
-    "City12": {
-        "population": 324263,
-        "coordinates": [
-            -24,
-            -7
-        ]
-    },
-    "City13": {
-        "population": 59799,
-        "coordinates": [
-            -13,
-            -26
-        ]
-    },
-    "City14": {
-        "population": 82293,
-        "coordinates": [
-            -41,
-            29
-        ]
-    },
-    "City15": {
-        "population": 105473,
-        "coordinates": [
-            -25,
-            -45
-        ]
-    },
     "Tehran": {
         "population": 400222,
         "coordinates": [

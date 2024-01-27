@@ -11,7 +11,6 @@ def main():
     graph.adj_matrix = load_matrix_from_csv()
 
     while True:
-        
         os.system('clear' if os.name == 'posix' else 'cls')
         
         print("\033[1;36mMenu: \033[0m")
@@ -26,12 +25,14 @@ def main():
             destination = input("destination city name: ")
             graph.routing(origin, destination)
             input("press Enter to continue...")
-             
-        
+
         elif choice == '2':
-            # Hanie to inja benvis
-            pass
-        
+            population1 = int(input("Enter the first population: "))
+            population2 = int(input("Enter the second population: "))
+            for i,j in graph.range_query(population1,population2):
+                print(f"\033[1;32m{i} with {j} population is between the two populations that you selected.")
+            time.sleep(3.5)
+
         elif choice == '3':
             city_name = input("Enter city name: ")
             population = int(input("Enter population: "))

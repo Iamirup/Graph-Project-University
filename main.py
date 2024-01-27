@@ -22,7 +22,8 @@ def main():
         choice = input("\033[1;36mEnter your choice: \033[0m")
         
         if choice == '1':
-            # Agha Reza to inja benvis
+            city_name = input("Enter city name: ")
+            # Agha Reza to inja benvis ok check test
             pass
         
         elif choice == '2':

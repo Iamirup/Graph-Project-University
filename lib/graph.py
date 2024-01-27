@@ -8,16 +8,6 @@ class CityGraph:
         self.adj_matrix = []
         self.cities = {}
 
-  
-
-
-
-    # def initialize_adj_matrix(self, num_cities):
-    #     self.adj_matrix = [[0] * num_cities for _ in range(num_cities)]
-
-
-
-
     def _get_neighbors(self, city):
          if city not in self.cities:
             return []
@@ -30,14 +20,11 @@ class CityGraph:
             if i < len(self.cities) and distance > 0:
                 yield list(self.cities.keys())[i], distance
 
-
-
     def routing(self, origin, destination):
         if origin not in self.cities or destination not in self.cities:
             print("Origin or destination city not found.")
             return
 
-        # Dijkstra's algorithm
         distances = {city: float('inf') for city in self.cities}
         distances[origin] = 0
         previous = {city: None for city in self.cities}
@@ -69,15 +56,10 @@ class CityGraph:
             print("There is no route between the origin and destination cities.")
         
     
-
-
     def range_query(self):
         # Hanie to inja benvis
         pass
     
-
-
-
 
     def insert_new_city(self, city_name, population, coordinates):
         
@@ -89,24 +71,6 @@ class CityGraph:
             row.append(distances[i])
         self.adj_matrix.append(distances + [0])
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
     @staticmethod
     def calculate_distance(coord1, coord2):
         return round(math.sqrt((coord1[0] - coord2[0])**2 + (coord1[1] - coord2[1])**2), 1)
-
-
-

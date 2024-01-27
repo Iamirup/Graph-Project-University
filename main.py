@@ -9,7 +9,7 @@ def main():
     graph.cities = load_cities_from_json()
     num_cities = len(graph.cities)
     graph.adj_matrix = load_matrix_from_csv()
-    
+
     while True:
         
         os.system('clear' if os.name == 'posix' else 'cls')
@@ -22,10 +22,10 @@ def main():
         choice = input("\033[1;36mEnter your choice: \033[0m")
 
         if choice == '1':
-            origin = input("Enter origin city: ")
-            destination = input("Enter destination city: ")
+            origin = input("origin city name: ")
+            destination = input("destination city name: ")
             graph.routing(origin, destination)
-            input("Press Enter to continue...")
+            input("press Enter to continue...")
              
         
         elif choice == '2':

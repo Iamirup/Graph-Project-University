@@ -7,101 +7,101 @@
         ]
     },
     "City2": {
-        "population": 332551,
+        "population": 443055,
         "coordinates": [
-            -18,
-            -24
+            21,
+            25
         ]
     },
     "City3": {
-        "population": 11964,
+        "population": 491274,
         "coordinates": [
-            25,
-            37
+            -12,
+            -21
         ]
     },
     "City4": {
-        "population": 154894,
+        "population": 433183,
         "coordinates": [
-            -7,
-            -32
+            -3,
+            22
         ]
     },
     "City5": {
-        "population": 61420,
+        "population": 165776,
         "coordinates": [
-            31,
-            10
+            29,
+            43
         ]
     },
     "City6": {
-        "population": 17950,
+        "population": 90890,
         "coordinates": [
-            46,
-            -16
+            13,
+            32
         ]
     },
     "City7": {
-        "population": 235352,
+        "population": 12603,
         "coordinates": [
-            -1,
-            -32
+            -7,
+            -25
         ]
     },
     "City8": {
-        "population": 273900,
+        "population": 279188,
         "coordinates": [
-            -33,
-            33
+            -40,
+            9
         ]
     },
     "City9": {
-        "population": 212552,
+        "population": 36509,
         "coordinates": [
-            43,
-            -45
+            37,
+            -12
         ]
     },
     "City10": {
-        "population": 16364,
+        "population": 137392,
         "coordinates": [
-            10,
-            -3
+            42,
+            -7
         ]
     },
-    "Tehran": {
-        "population": 400222,
+    "City11": {
+        "population": 133824,
         "coordinates": [
-            28,
-            4
+            -39,
+            -35
         ]
     },
-    "Kashan": {
-        "population": 1234567,
+    "City12": {
+        "population": 75532,
         "coordinates": [
-            3,
-            -5
+            -6,
+            -34
         ]
     },
-    "Bidgol": {
-        "population": 141357,
+    "City13": {
+        "population": 363430,
         "coordinates": [
-            23,
-            7
+            33,
+            41
         ]
     },
-    "Isfahan": {
-        "population": 13522,
+    "City14": {
+        "population": 81845,
         "coordinates": [
-            3,
-            42
+            18,
+            -38
         ]
     },
-    "Bam Kashan": {
-        "population": 6,
+    "City15": {
+        "population": 19420,
         "coordinates": [
-            2,
-            12
+            5,
+            -32
         ]
     }
 }

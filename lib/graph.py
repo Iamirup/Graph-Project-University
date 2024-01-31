@@ -21,7 +21,7 @@ class CityGraph:
         previous = {city: None for city in self.cities}
         
         while unvisited:
-            current_city = min(unvisited, key=lambda city: distances[city])
+            current_city = min(unvisited, key=distances.get)
             unvisited.remove(current_city)
 
             if distances[current_city] == float('inf'):

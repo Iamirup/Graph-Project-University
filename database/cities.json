@@ -110,5 +110,12 @@
             4,
             9
         ]
+    },
+    "amir": {
+        "population": 560000,
+        "coordinates": [
+            5,
+            16
+        ]
     }
 }

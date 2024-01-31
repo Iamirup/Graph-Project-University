@@ -1,5 +1,6 @@
 from lib.graph import CityGraph
 from lib.file_worker import *
+import time
 import os
 
 def main():
@@ -22,24 +23,39 @@ def main():
         if choice == '1':
             origin = input("Origin city name: ")
             destination = input("Destination city name: ")
+            
+            start_time = time.time()
             graph.routing(origin, destination)
+            end_time = time.time()
+            
+            print(f"Execution time: \033[1;32m{end_time - start_time}\033[0m seconds")
             input("press Enter to continue...")
                      
         elif choice == '2':
             population1 = int(input("Enter the first population: "))
             population2 = int(input("Enter the second population: "))
+            
+            start_time = time.time()
             for i,j in graph.range_query(population1,population2):
                 print(f"\033[1;32m{i}\033[0m with \033[1;32m{j}\033[0m population is between the two populations that you selected.")
+            end_time = time.time()
+            
+            print(f"Execution time: \033[1;32m{end_time - start_time}\033[0m seconds")
             input("press Enter to continue...")
         
         elif choice == '3':
             city_name = input("Enter city name: ")
             population = int(input("Enter population: "))
             coordinates = tuple(map(int, input("Enter coordinates (x y): ").split()))
+            
+            start_time = time.time()
             graph.insert_new_city(city_name, population, coordinates)
+            end_time = time.time()
+            
             save_cities_to_json(graph.cities)
             save_matrix_to_csv(graph.adj_matrix)
             print("\033[1;32m--Your city has been successfully registered--\033[0m")
+            print(f"Execution time: \033[1;32m{end_time - start_time}\033[0m seconds")
             input("press Enter to continue...")
             
         elif choice == '4':
